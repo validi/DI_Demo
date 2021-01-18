@@ -16,6 +16,7 @@ public class SmartPhone {
         this.battery = battery;
         this.memoryCard = memoryCard;
         this.simCard = simCard;
+        battery.ShowType();
     }
 
 

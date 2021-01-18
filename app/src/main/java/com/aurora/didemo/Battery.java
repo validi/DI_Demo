@@ -2,9 +2,7 @@ package com.aurora.didemo;
 
 import javax.inject.Inject;
 
-public class Battery {
+public interface Battery {
 
-    @Inject
-    public Battery() {
-    }
+   void ShowType();
 }
