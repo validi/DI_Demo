@@ -8,16 +8,16 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     SmartPhone smartPhone;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-SmartPhoneComponent smartPhoneComponent=DaggerSmartPhoneComponent.create();
-smartPhone=smartPhoneComponent.getSmartPhone();
+        SmartPhoneComponent smartPhoneComponent = DaggerSmartPhoneComponent.create();
+        smartPhone = smartPhoneComponent.getSmartPhone();
 
         smartPhone.makeACall();
-
 
 
     }
