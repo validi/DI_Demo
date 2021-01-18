@@ -1,7 +1,10 @@
 package com.aurora.didemo;
 
+import javax.inject.Singleton;
+
 import dagger.Component;
 
+@Singleton
 @Component(modules = {MemoryCardModule.class,NCBatteryModule.class})
 public interface SmartPhoneComponent {
 
